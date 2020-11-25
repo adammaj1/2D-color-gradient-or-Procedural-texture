@@ -92,6 +92,10 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
 
 ```
 
+See also:
+* [island-gradient by Code 2D](https://code2d.wordpress.com/2020/07/21/island-gradient/)
+
+
 # color
 ## color modes
 * 24 bit color (rgb), color function tecza ( 1D color gradient ) 
@@ -112,6 +116,8 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
 On linux ( tested on Ubuntu 20.04): 
 ```
 wine ./Rainbow.exe
+wine ./exe/Rainbow.exe
+
 ```
 
 
@@ -126,6 +132,13 @@ Old ( but still interesting) Pascal ( Borland Delphi 7.0 personal edition )  pro
 old www address: fraktal.republika.pl/tecza.html
 
 Last modification: 2005-05-29 
+
+
+# Licence and cotributors
+* [licence](LICENCE) - GNU General Public License v3.0
+* FUNCTION HSVtoColor from UNIT HSVLibrary ( efg, July 1999  www.efg2.com/lab  Copyright 1999, All Rights Reserved. May be used freely for non-commercial purposes.
+* Function Rainbow by  Witold J.Janik; WJJ@CAD.PL thx for  Andrzeja W¹sika from pl.comp.lang.delphi  http://4programmers.net/view.php?id=201
+  
 
 # Git
 
