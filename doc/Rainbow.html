@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0105)file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/tecza.html -->
+<html><!-- Mirrored from fraktal.republika.pl/tecza.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jan 2018 19:20:13 GMT --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+	
+	<title> Rainbow </title>
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="Adam Majewski">
+	<meta name="Keywords" content="wolne oprogramowanie">
+	<meta name="Description" content="Tecza,rainbow">
+</head>
+
+<body bgcolor="#000000" link="#FF0000" alink="#3300FF" vlink="#3300FF">
+<!-- ustawienia -->
+<!-- kolor tła -->
+	<basefont color="#FFFFFF">
+	<!-- podstawowy kolor odsyłacza  -->
+	<!-- kolor kliknietego odsyłacza  -->
+	<!-- kolor odwiedzonego wcześniej linku -->
+
+<font size="" color="#FFFFFF">
+ 
+<p><b></b></p><center><b><font size="10" color="#3366FF">Rainbow</font></b></center><b><b><p></p>
+<hr><hr>
+
+
+<img src="./Rainbow_files/b.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/f.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/g.jpg" width="300" height="300" border="0" alt="">
+<br><hr>
+<img src="./Rainbow_files/l.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/c.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/d.jpg" width="300" height="300" border="0" alt="">
+<br><hr>
+
+<img src="./Rainbow_files/e.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/h.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/hsv.jpg" width="300" height="300" border="0" alt="">
+<hr>
+<img src="./Rainbow_files/sin.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/sinbw.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/sinbw1.jpg" width="300" height="300" border="0" alt="">
+<br><hr>
+<img src="./Rainbow_files/singray.jpg" width="300" height="300" border="0" alt="">
+<img src="./Rainbow_files/whirl.jpg" width="300" height="300" border="0" alt="">
+
+<img src="./Rainbow_files/Jacco179SinXSinY.jpg" width="300" height="300" border="0" alt="">
+<br><hr>
+<ul>Versions:
+	<li><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/zip/r20051021.zip">version 20051021</a>&nbsp;opens fractint palette map files</li>
+	<li><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/zip/r20050529.zip">version 2005.05.29</a>&nbsp;new types and name of enumerated type
+	</li><li><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/zip/r20050512.zip">version 2005.05.12</a> one may use arrows up and down (keyboard) to change function type and shift+arrow to change color type; added documentation</li>
+	<!-- <li><a href="/fraktal/zip/r20050329.zip">version 2005.03.29</a>&nbsp;uses checkbox group<br> -->
+	<li><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/zip/TeczaScan.zip"><b>version 20040317</b></a><b> 236 KB, szybsza wersja, uzywa ScanLine, zapisuje pliki jako bmp </b></li>
+	<li><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/zip/tecza.zip"><b>version 20040306</b></a> 219 KB, korzysta z form.canvas,pixels, wolna, łatwiejsza do odczytania kodu</li>
+	<li><a href="http://4programmers.net/file.php?id=1392">diffrent site - 4programmers.net</a>
+
+</li></ul>
+
+
+<br>
+ 
+<hr><hr>
+
+scalar 2D field f : (R x R)--&gt; R<br>
+
+
+<hr><hr>
+Transformations ( each arrows is a one function):
+<ul>
+	<li>(iX,iY:integer)-1-&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+	(iIndex:integer)&nbsp; &nbsp;  -3-&gt; (color:TColor)</li>
+	<li>(iX,iY:integer)-1-&gt;(eX,eY:extended) -2-&gt;	(iIndex:integer)&nbsp; &nbsp;&nbsp; -3-&gt; (color:TColor)</li>
+	<li>(iX,iY:integer)-1-&gt;(eX,eY:extended) -2-&gt;	(eIndex:extended) -3-&gt; (color:TColor)</li>
+</ul>
+where: <br>
+iX,iY are screen coordinates<br>
+eX,eY are world ( real) coordinates<br>
+Index is a ....<br>
+Color represents color of pixel(iX,iY)<br>
+Functions are:<br>
+<ul>
+	<li>-1-&gt;	: is a linear <a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/mapping.html">mapping function</a>
+	</li><li>-2-&gt; and -3-&gt;	: are  <a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/gradient.html">color gradient funtion</a>
+	</li><li> 
+</li></ul>
+<br>
+<hr>
+
+Właściwie nie są to fraktale, ale program pokazuje różne metody kolorowania fraktali. Nadawanie koloru wg indeksu jest używane w różnych metodach, jak np. LSM ( Level Set Method). Procedury w nim pokazane są użyte w programie mandelbrot.<br>
+<hr>
+<ul>Program Tecza wyswietla tecze w trybie:
+	<li>24 bitowego koloru, (rgb), korzysta z funkcji tecza
+	</li><li>skali szarosci, (r=g=b)
+	</li><li>direct kolor( kolor 24 bitowy , ale adresowanie bezposrednie wg numerów koloru),
+	</li><li>Black and White 
+</li></ul>
+<ul>Mozliwe jest wyswietlenie różnych modyfikacji teczy:
+	<li> poziome pasy ( kolor ~ y = im(z) )
+	</li><li>angle (kolor= Arg(z) 
+	</li><li>koła          ( kolor ~ r = promien koła = abs(z)
+	</li><li> kwadraty      ( kolor ~ max(abs(x),abs(y))
+	</li><li> biomorph ( coś podobnego do gwiazdy) ( kolor ~ abs(2* x*y)
+	</li><li>plus &nbsp;&nbsp;(kolor=y+x)
+	</li><li>divided (kolor=y/x)
+</li></ul>
+<hr>
+Są to wykresy funkcji F: (C --&gt; R), albo (R x R --&gt; R)<br>
+<hr>
+
+Program jest napisany w <a href="http://www.borland.com/delphi/index.html"><img src="./Rainbow_files/delphi.gif" border="0"></a>  Delphi 7.0 personal edition - darmowa wersja. Możesz pobrać ją ze strony Borland<br>
+
+<hr>
+ <a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/doc/rainbow.txt">Funkcję tęcza </a>opracował Witold J.Janik; WJJ@CAD.PL..
+
+	<hr>
+<!--  -->
+<ul>To do :
+	
+	
+	<li>reading and saving fractint map files</li>
+	<li><a href="http://www.peda.com/grafeq/">Grafeq</a>
+	</li><li><a href="http://www.xahlee.org/MathGraphicsGallery_dir/dense/dense1.html">Density Plots of Trig Expressions</a>&nbsp;by Xah Lee</li>
+	<li><a href="http://www.ottisoft.com/interfer.htm">Interference. Visualize and experiment with the interference pattern of two circular waves.</a>&nbsp;by ottisoft</li>
+	<li><a href="http://www.electrostatics3d.com/">field lines </a>&nbsp;by Nima Bigdely Shamlo
+Computational Science Research Center, San Diego State University</li>
+	<li><a href="http://www.harmware.net/">Seamless Tiles </a></li>
+
+	<li><ul><font color="#336600"><a href="http://en.wikipedia.org/wiki/Domain_coloring">Domain coloring of complex mapping</a></font>
+	<li><a href="http://commons.wikimedia.org/wiki/User:Jan_Homann/Mathematics">Jan Homann/Mathematics</a></li>
+			<li><a href="http://info.supereva.it/malilla/index.html?p">Zandor</a>&nbsp;by Alessandro Rosa; it maybe inactive now. Try <a href="http://www.archive.org/">The Internet Archive</a></li>
+			<li><a href="http://www.mai.liu.se/~halun/complex/complex.html">visualizing complex analytic function  </a></li><a href="http://www.mai.liu.se/~halun/complex/complex.html">			using domain coloring </a> by Hans Lundmark
+			<li><a href="http://www.math.tu-clausthal.de/~mjg/Computing/Conformal/"> Visualizing Conformal Maps</a>&nbsp;by Michael J. Gruber</li>
+			<li><a href="http://functions.wolfram.com/ElementaryFunctions/Power/visualizations/2.html">3D plots over the complex planes</a> in Mathemathica</li>
+			<li><a href="http://www.mai.liu.se/~halun/complex/complex.html">visualizing complex analytic function  using domain coloring  by Hans Lundmark</a></li>
+			<li><a href="http://www.ima.umn.edu/~arnold/complex.html">GRAPHICS FOR COMPLEX ANALYSIS
+			Douglas N. Arnold </a></li>
+			<li><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/www.math.u-szeged.hu/_kovzol/VotCP-submitted.doc">Visualizations on the Complex Plane</a> by Zoltán Kovács </li>
+			<a href="http://math.la.asu.edu/~kawski/java/essential.html">Convergence of complex functions and analytic continuation via color</a>&nbsp;by  Matt Kawski
+			<li><a href="http://rtzme.sourceforge.net/english.php">Real-Time Zooming Math Engine by Zoltán Kovács</a></li>
+		
+		</ul>
+		</li><li><a href="http://www2.vo.lu/homepages/phahn/fractals/plasma.htm">Plasma fractals</a>&nbsp;by Patrick Hahn</li>
+		<li><a href="http://www.mathcurve.com/surfaces/boiteaoeufs/boiteaoeufs.shtml">BOÎTE A` OEUFS</a>from MathCurve
+		</li><li><a href="http://www.phy.uct.ac.za/courses/phy209s/209stuts.htm">Gradient of a scalar field</a>&nbsp;by Andy Buffler from  University of Cape Town Department of Physics</li>
+		<li><a href="http://www.harmware.net/index.htm">HarmWare Backgrounds</a>
+		</li><li><a href="http://www.tjhsst.edu/~dhyatt/supercomp/n109.html">Speeding Up Computation and Color Ramps
+		by D.W. Hyatt</a></li>
+		<li><a href="http://www.physics.emory.edu/~weeks/ideas/tplot.html">Contour plots with trigonometric functions by Eric Weeks </a></li>
+		<li><a href="https://binboy.sphere.pl:555/index.php?show=207">Fraktal mapping </a>&nbsp;by komorra</li>
+		<li><a href="http://ayapin.film.s.dendai.ac.jp/~matuda/Gnuplot/geom.html"> Demos of palette-mapped 3d terminal: Pm3d (2)</a></li>
+		<li><a href="http://curvebank.calstatela.edu/povray/povray.htm">Color-coded Curves</a>&nbsp;by Patrick J. Gleason</li>
+</ul>
+<li><a href="http://www.lukas-home-page.ovh.org/artykuly/delphi-elektroniczny_kalejdoskop.php">elektroniczny_kalejdoskop by Lukas</a> </li>
+<li><a href="http://www.paideiaschool.org/TeacherPages/Steve_Sigur/resources/misc%20artmatic/mollie%20art/mollie%20art.html">mollie art by Steve Sigur</a></li>
+
+<li><a href="http://www.subblue.com/blog/2008/9/20/aliasing_patterns">
+Aliasing patterns</a> &nbsp;by Tom Beddard</li>
+
+<li><a href="http://www.cgl.uwaterloo.ca/~csk/projects/alias/">
+Aliasing patterns</a> &nbsp;by Craig S. Kaplan.</li>
+
+
+
+
+<!-- ----------------------------------------------------------------------------- -->
+	<hr><hr>
+	<a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/index-2.html"><center><b><font size="5">Main Page </font></b></center></a>
+	<hr>
+
+
+
+<!-- ******************** stopka ************************************************************ -->
+
+	 <center>Autor:  Adam Majewski </center>&nbsp;adammaj1-at -o2- dot -pl<br>
+	<p> Strona utworzona przy pomocy programu: EditPlus <a href="http://www.editplus.com/">  	 www.editplus.com</a></p>
+	<p> Last modification: 2005-05-29 </p>
+	<p><a href="file:///media/a/ed0cc31a-9ded-42fc-af8d-c00a59844ed4/home/a/Dokumenty/www/fraktal.republika.pl/about.html">About</a></p>
+				
+				
+				
+				
+								
+				
+				
+			
+</b></b></font><b><b>
+
+
+<!-- Mirrored from fraktal.republika.pl/tecza.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jan 2018 19:22:21 GMT -->
+
+</b></b></body></html>
