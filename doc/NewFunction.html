@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title> New Document </title>
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+</head>
+
+<body>
+How the image is created?<br>
+x,y : integer ( coordinates of pixel) --> k : integer ( index of color) --> color:TColor ( color of the pixel)<br>
+--> RGB ( color of pixel)<br>
+
+
+<hr><!--  -->
+how to add new function ?
+<ol>
+	<li>in unit FunctionsM add new function type to definition of TFunctionType
+	<li>in form OptionDlg in FunctionsGroup add a new radioButton ( in object inspector open FunctionsGroup and then klik on items to see the editor; add new string) 
+	<li>in optionsDlgM in procedure TOptionsDlg.OKButtonClick add new line  
+	<li>you also may changen kMax in Procedure Setup in unit FunctionsM ( add new line if there is no such line in case statement, it means that else is used
+</ol>
+<hr><!-- Functions-->
+Functions:<br>
+*******************************<br>
+Sinus: color:=sin(x)<br>
+------------------------<br>
+ result:=y+round(height*(sin(DegToRad(x))+1)/2); <br>
+ value of sin  has a range [-1,+1]<br>
+		(sin+1)				[0,2]<br>
+		(sin+1)/2			[0,1]<br>
+		If you want to see more periods of sin add:<br>
+result:=y+round(height*sin(<b>2*Pi*</b>DegToRad(x))+1)/2); <br>
+If you want to see sin more flat:<br>
+result:=y+round(height*sin(2*Pi*DegToRad(x))+1)/<b>8</b>); <br>
+
+
+
+</body>
+</html>

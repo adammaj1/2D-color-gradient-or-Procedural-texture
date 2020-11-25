@@ -1,0 +1,16 @@
+How to add a new rainbow type?
+1. add a new  rainbow type in a definition :
+	Type TFunctionType 
+	in a interface of unit FunctionsM
+2. 	Procedure Setup change a kMax 
+	in a unit FunctionsM ( it is not necessary beacause of else statement of case 	functions does it for every unlisted type)
+3.in definition of Function Projection add code 
+4. in unit OptionsDlgM; in definition of  procedure TOptionsDlg.OKButtonClick
+add ItemIndex 
+5. view forms: OpitionDlg as a text; 
+in a "object FunctionsGroup: TRadioGroup"
+in a "Items.Strings ="
+add a new string
+6. save all
+7. run the program
+8. click mainMenu/options 

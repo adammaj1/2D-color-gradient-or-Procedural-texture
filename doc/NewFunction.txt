@@ -1,0 +1,36 @@
+---------------------------------------------------------
+1. How to add new function?
+- add new menu item (*) in function subMenu of Main Window in unit MainM
+- add new RainbowType in definition:
+	TTypTeczy=(Kolo,Angle,Pasy,kwadrat,lub,biomorph,manhattan,imaginary,Sinus,plus,divided,plusdivided);
+	in unit TeczaScanM
+- in setup function ( unit teczaScanM) in instruction case add new field, 
+	which instructs how to evaluate kMax
+- in function Projekcja ( unit TeczaScanM) give a new field with code of new function
+- open oject inspector 
+- in NewTypeClick function of new menu Item  (* see above) in unit MainM
+	insert:
+		TypTeczy:=NewType;
+  		//only one can be checked
+  		Form1.Absz1.Checked:=false;
+  		Form1.Arg1.Checked:=false;
+  		form1.Rez1.Checked:=false;
+  		Form1.ReIm1.Checked:=false;
+  		Form1.Maxreim1.Checked:=false;
+  		Form1.Absreim1.Checked:=false;
+  		Form1.ImRe1.Checked:=false;
+  		Form1.SinusRez1.Checked:=false;
+  		Form1.SqrAbsreAbsIm1.Checked:=false;
+  		Form1.NewType.checked:=true; // added and checked
+		//
+ 		Rysuj(typTeczy,TypKoloru);
+  		//
+  		Form1.Image1.Picture.Graphic:=bitmapa; 		 
+- in all the rest TypeClick functions add
+		Form1.NewType.checked:=false; // added and unChecked
+
+- thats all ( kMin and kMax are important, and of course code of NewFunction) 
+ 
+----------------------------------------------------------------------------
+20040528
+---------------------------------------------------------------------------
