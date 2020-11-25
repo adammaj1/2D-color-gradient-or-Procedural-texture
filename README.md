@@ -1,4 +1,4 @@
-[Procedural texture](https://en.wikipedia.org/wiki/Procedural_texture)
+[Procedural texture](https://en.wikipedia.org/wiki/Procedural_texture) - 2D [color gradient](https://en.wikipedia.org/wiki/Color_gradient)
 
 
 
@@ -34,7 +34,7 @@
 
 # Theory
 * scalar 2D field 
-* function f : (R x R) maps to  R
+* function f : (R x R) maps to  color
 
 
 # Functions
