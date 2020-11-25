@@ -92,12 +92,19 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
 
 ```
 
-# color modes
-
+# color
+## color modes
 * 24 bit color (rgb), color function tecza ( 1D color gradient ) 
 * gray shades (skala szarosci where r=g=b)
 * direct kolor( kolor 24 bitowy , ale adresowanie bezposrednie wg numerów koloru)
 * Black and White 
+
+## color functions
+* [Rainbow](./src/ColorM.pas) =  [1D RGB color gradient](https://gitlab.com/adammajewski/color_gradient) 
+
+
+
+
 
 
 # run
@@ -114,7 +121,7 @@ wine ./Rainbow.exe
 
 ![](./images/delphi.gif "description")   
 
-Old ( but still interesting) Pascal ( Delphi)  program Rainbow for windows ( but can also be run on Linux using wine)
+Old ( but still interesting) Pascal ( Borland Delphi 7.0 personal edition )  program Rainbow for windows ( but can also be run on Linux using wine)
 
 old www address: fraktal.republika.pl/tecza.html
 
