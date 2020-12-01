@@ -94,7 +94,7 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
 
 See also:
 * [island-gradient by Code 2D](https://code2d.wordpress.com/2020/07/21/island-gradient/)
-
+* [2D distance functions by inigo quilez ](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 
 # color
 ## color modes
