@@ -18,7 +18,8 @@
 ![](./images/star8i.png "star8 inverted") 
 
 ![](./images/himmelblau.png "himmelblau function") 
-
+![](./images/checker.png "checker")
+ 
 
 
 ## pascal images (up to 24 bit color)
@@ -113,6 +114,85 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
 
 ```
 ## c
+
+```c
+double conic(double complex z)
+{
+  double argument;
+  
+  argument = carg(z); //   argument in radians from -pi to pi
+  
+  argument = fabs(argument)/ M_PI;
+      
+  return argument; // argument in range from 0.0 to 1.0
+}
+```
+
+```c
+
+// https://en.wikipedia.org/wiki/Himmelblau%27s_function
+double GiveHimmelblau(double x, double y){
+	// mapped input to [-6,6]x[-6,6]
+	x *= 6.0;
+	y *= 6.0;
+	double a = x*x+y-11.0;
+	double b = x+y*y-7.0;
+	// mapped output to 
+	 return (a*a + b*b)/200.0;
+
+}
+```
+
+
+```c
+/*
+	https://iquilezles.org/www/articles/checkerfiltering/checkerfiltering.htm
+	checkers, in mod form
+*/
+double checker( double x, double y){
+
+	int ix = floor(5.0*x);
+	int iy = floor(5.0*y);
+
+
+	return abs(ix + iy) % 2;
+}
+```
+
+```c
+/* 
+ r is the smooth potential and phi is the final angle
+ code by xenodreambuie : "I call this texture pyramids. My code in Pascal for the Star8 texture is "
+ 
+ 
+*/ 
+
+double GiveStar8(double r, double phi){
+	double fr;
+	double fphi;
+	double t;
+	double g;
+	
+	fr = fabs(frac(r));
+  	fphi = fabs(frac(phi));
+  	if (fphi>fr) {
+    		t= fr; 
+    		fr= fphi; 
+    		fphi=t;
+    		}
+  
+	g = 1+1.5*fphi-2.5*fr;
+	t = 1-2.5*fphi-fr;
+	if (t> g) 
+	  	{ g = t;}
+	if (g<0)
+  		{g=0;}
+  	
+	return g;
+}
+```
+
+
 
 
 # files
