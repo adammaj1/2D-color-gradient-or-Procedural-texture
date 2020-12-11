@@ -128,7 +128,7 @@ int nMax; // =  sizeof(titles)/sizeof(titles[0]); // 18; // see GiveColor functi
 // add new title here and new function to GiveColor
 // titles = "Rainbow Linas Magma GrayL GrayNL2 GrayNL3 GraySqrt Green NewLinas CoolWarm GrayGamma GrayNL3Wave2 GrayNL3Wave10 GraySqrtWave ColorLWave ColorLWaveInverted NL3Wave5NonInv Cubehelix"
 const char *titles[] = {"max", "min", "product" , "maxabs", "minsqrt", "sqrtp", "powxy", "pow", "sin", "sinxy", 
-			"checker", "star8", "star8i", "cabs", "cabsi", "cargm", "cturn", "conic", "himmelblau " 
+			"checker", "star8", "star8i", "cabs", "cabsi", "cargm", "cturn", "conic", "himmelblau" 
 			};
 
 
@@ -251,7 +251,7 @@ double frac(double d){
 /* 
  r is the smooth potential and phi is the final angle
  code by xenodreambuie : "I call this texture pyramids. My code in Pascal for the Star8 texture is "
- https://fractalforums.org/programming/11/how-many-different-ways-are-there-to-show-such-set/3874/msg25389#msg25389
+ 
  
 */ 
 

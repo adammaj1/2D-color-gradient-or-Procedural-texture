@@ -4,7 +4,22 @@
 
 # images
 
-![](./images/absz.jpg "description") 
+## gray = 8 bit color ( c images ) 
+![](./images/conic.png "conic") 
+![](./images/cabs.png "cabs") 
+![](./images/cabsi.png "cabs inverted") 
+![](./images/carg.png "carg") 
+![](./images/cargm.png "carg modified") 
+
+![](./images/cturn.png "cturn") 
+
+
+![](./images/star8.png "star8") 
+![](./images/star8i.png "star8 inverted") 
+
+## pascal images (up to 24 bit color)
+
+![](./images/absz.jpg "abs") 
 ![](./images/b.jpg "description") 
 ![](./images/c.jpg "description") 
 ![](./images/d.jpg "description") 
@@ -14,15 +29,15 @@
 ![](./images/f.jpg "description") 
 ![](./images/g.jpg "description") 
 ![](./images/h.jpg "description") 
-![](./images/hsv.jpg "description") 
+![](./images/hsv.jpg "hsv") 
 ![](./images/l.jpg "description") 
 
 
-![](./images/maxreim.jpg "description") 
-![](./images/sin.jpg "description") 
-![](./images/sinbw.jpg "description") 
-![](./images/sinbw1.jpg "description") 
-![](./images/singray.jpg "description") 
+![](./images/maxreim.jpg "maxreim") 
+![](./images/sin.jpg "sin") 
+![](./images/sinbw.jpg "sinbw") 
+![](./images/sinbw1.jpg "sinbw1") 
+![](./images/singray.jpg "singray") 
 
 
 
@@ -38,6 +53,8 @@
 
 
 # Functions
+
+## pascal
 
 ```pascal
 Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunctionType):integer;
@@ -91,10 +108,20 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
   end;
 
 ```
+## c
 
-See also:
+
+# files
+* [ColorM.pas](./src/pas/ColorM.pas)  
+* [Rainbow.exe](./exe/Rainbow.exe) - windows executable program, can be run also on linux
+* [d.c](./src/c/d.c) - c version of Rainbow program
+* [g.sh](./src/c/g.sh) bash script for converting ppm files to png
+
+
+# See also
 * [island-gradient by Code 2D](https://code2d.wordpress.com/2020/07/21/island-gradient/)
 * [2D distance functions by inigo quilez ](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
+* [a-simple-procedural-texture-algorithm by by Herman Tulleken ](http://www.code-spot.co.za/2008/11/07/a-simple-procedural-texture-algorithm/)
 
 # color
 ## color modes
@@ -104,7 +131,7 @@ See also:
 * Black and White 
 
 ## color functions
-* [Rainbow](./src/ColorM.pas) =  [1D RGB color gradient](https://gitlab.com/adammajewski/color_gradient) 
+* [ColorM.pas](./src/pas/ColorM.pas) - color functions in pascal ( Delphi)
 
 
 
@@ -112,6 +139,8 @@ See also:
 
 
 # run
+
+## pascal
 
 On linux ( tested on Ubuntu 20.04): 
 ```
@@ -125,17 +154,21 @@ wine ./exe/Rainbow.exe
 
 # History
 
-![](./images/delphi.gif "description")   
+![](./images/delphi.gif "delphi logo")   
 
 Old ( but still interesting) Pascal ( Borland Delphi 7.0 personal edition )  program Rainbow for windows ( but can also be run on Linux using wine)
 
-old www address: fraktal.republika.pl/tecza.html
+dead old www address: fraktal.republika.pl/tecza.html
 
 Last modification: 2005-05-29 
 
 
-# Licence and cotributors
+
+
+
+# Licence and contributors
 * [licence](LICENCE) - GNU General Public License v3.0
+* function [star8 by xenodreambuie ( pascal) ](https://fractalforums.org/programming/11/how-many-different-ways-are-there-to-show-such-set/3874/msg25389#msg25389)
 * FUNCTION HSVtoColor from UNIT HSVLibrary ( efg, July 1999  www.efg2.com/lab  Copyright 1999, All Rights Reserved. May be used freely for non-commercial purposes.
 * Function Rainbow by  Witold J.Janik; WJJ@CAD.PL thx for  Andrzeja W¹sika from pl.comp.lang.delphi  http://4programmers.net/view.php?id=201
   
