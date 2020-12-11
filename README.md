@@ -53,17 +53,23 @@
 
 
 # Theory
-* scalar 2D field 
+* scalar 2D field ( 2D array , image )
 * color
   * modes
   * function f : (R x R) maps to  color
+  
+  
+  
+  
+  
 
 ## color modes
-* 24 bit color (rgb), color function tecza ( 1D color gradient ) 
-* gray shades (skala szarosci where r=g=b)
-* direct kolor( kolor 24 bitowy , ale adresowanie bezposrednie wg numerów koloru)
-* Black and White 
 
+[Color depth](https://en.wikipedia.org/wiki/Color_depth)
+* 24 bit color (rgb) 
+* 8 bit color mode: gray shades ( where r=g=b)
+* 1 bit color mode: Black and White ( b&w )
+* direct color, palette mode
 
 
 
