@@ -12,10 +12,14 @@
 ![](./images/cargm.png "carg modified") 
 
 ![](./images/cturn.png "cturn") 
-
-
+![](./images/max.png "max") 
+![](./images/min.png "min") 
 ![](./images/star8.png "star8") 
 ![](./images/star8i.png "star8 inverted") 
+
+![](./images/himmelblau.png "himmelblau function") 
+
+
 
 ## pascal images (up to 24 bit color)
 
