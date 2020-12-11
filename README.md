@@ -54,12 +54,25 @@
 
 # Theory
 * scalar 2D field 
-* function f : (R x R) maps to  color
+* color
+  * modes
+  * function f : (R x R) maps to  color
+
+## color modes
+* 24 bit color (rgb), color function tecza ( 1D color gradient ) 
+* gray shades (skala szarosci where r=g=b)
+* direct kolor( kolor 24 bitowy , ale adresowanie bezposrednie wg numerów koloru)
+* Black and White 
 
 
-# Functions
 
-## pascal
+
+
+## color functions
+
+### pascal
+For color functions in pascal ( Delphi) see file: [ColorM.pas](./src/pas/ColorM.pas)
+
 
 ```pascal
 Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunctionType):integer;
@@ -113,7 +126,7 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
   end;
 
 ```
-## c
+### c
 
 ```c
 double conic(double complex z)
@@ -206,16 +219,8 @@ double GiveStar8(double r, double phi){
 * [island-gradient by Code 2D](https://code2d.wordpress.com/2020/07/21/island-gradient/)
 * [2D distance functions by inigo quilez ](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 * [a-simple-procedural-texture-algorithm by by Herman Tulleken ](http://www.code-spot.co.za/2008/11/07/a-simple-procedural-texture-algorithm/)
+* [1D color gradient](https://gitlab.com/adammajewski/color_gradient)
 
-# color
-## color modes
-* 24 bit color (rgb), color function tecza ( 1D color gradient ) 
-* gray shades (skala szarosci where r=g=b)
-* direct kolor( kolor 24 bitowy , ale adresowanie bezposrednie wg numerów koloru)
-* Black and White 
-
-## color functions
-* [ColorM.pas](./src/pas/ColorM.pas) - color functions in pascal ( Delphi)
 
 
 
