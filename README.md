@@ -1,4 +1,9 @@
-[Procedural texture](https://en.wikipedia.org/wiki/Procedural_texture) - 2D [color gradient](https://en.wikipedia.org/wiki/Color_gradient)
+[Procedural texture](https://en.wikipedia.org/wiki/Procedural_texture) 
+* 2D [color gradient](https://en.wikipedia.org/wiki/Color_gradient)
+* [defined by a function whose value is computed rather than looked up](http://math.hws.edu/graphicsbook/c7/s3.html)
+
+
+
 
 
 
@@ -53,11 +58,17 @@
 
 
 # Theory
-* scalar 2D field ( 2D array , image )
+[Procedural textures are 2D or 3D plots of mathematical functions (called procedures)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-B2C969C0-48CD-45AB-8C7B-E6FC9E34AD19-htm.html) 
+
+
+
+Parts
+* 2D [scalar field](https://en.wikipedia.org/wiki/Scalar_field) ( 2D array , image, [complex plane](https://en.wikipedia.org/wiki/Complex_plane)  )
 * color
   * modes
   * function f : (R x R) maps to  color
-  
+* plane transformations
+* Texture Mapping = repeatedly paint the same small picture onto your geometry   
   
   
   
@@ -76,7 +87,15 @@
 
 ## color functions
 
-### pascal
+
+Function
+* input: the texture coordinates: ( x,y)
+* output: a color value
+
+
+
+# Color functions
+## pascal
 For color functions in pascal ( Delphi) see file: [ColorM.pas](./src/pas/ColorM.pas)
 
 
@@ -132,7 +151,7 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
   end;
 
 ```
-### c
+## c
 
 ```c
 double conic(double complex z)
@@ -211,7 +230,7 @@ double GiveStar8(double r, double phi){
 }
 ```
 
-
+The checkerboard pattern is regular grid of equal-sized colored squares
 
 
 # files
@@ -222,13 +241,28 @@ double GiveStar8(double r, double phi){
 
 
 # See also
+## functions
 * [island-gradient by Code 2D](https://code2d.wordpress.com/2020/07/21/island-gradient/)
 * [2D distance functions by inigo quilez ](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 * [a-simple-procedural-texture-algorithm by by Herman Tulleken ](http://www.code-spot.co.za/2008/11/07/a-simple-procedural-texture-algorithm/)
 * [1D color gradient](https://gitlab.com/adammajewski/color_gradient)
+* [ptdesigner](https://github.com/drummyfish/ptdesigner) by drummyfish
+* [texture-studio ](http://www.mgsx.net/product/software/2015/09/18/texture-studio.html)
+* [create-repeating-patterns-with-cycles-procedural-textures](https://blender.stackexchange.com/questions/26692/how-do-i-create-repeating-patterns-with-cycles-procedural-textures)
+* [Sample Procedural Textures from ](https://docs.bentley.com/LiveContent/web/MicroStation%20Help-v13/en/GUID-AC1EEF76-9118-FE2E-32F6-399AF454E86C.html)
+* [Textures by  David J. Eck](http://math.hws.edu/graphicsbook/c7/s3.html)
+* [what-is-procedural-workflow](https://www.imanvfx.com/what-is-procedural-workflow/)
+* [2D textures in Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952-htm.html#GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952)
+* [A-generic-lattice-noise-algorithm-an-evolution-of](https://www.codeproject.com/Articles/785084/A-generic-lattice-noise-algorithm-an-evolution-of)
 
 
+## 2D noise
+* [Pocedural_Noise(2f)](http://physbam.stanford.edu/cs448x/old/Procedural_Noise(2f)Perlin_Noise.html)
+* [FastNoise by Auburn](https://github.com/Auburn/FastNoise/)
 
+
+## transformations 
+* [imitate-a-textured-sphere-in-2d](https://gamedev.stackexchange.com/questions/147193/imitate-a-textured-sphere-in-2d)
 
 
 
