@@ -45,8 +45,7 @@
 
 ### sin 
 
-![](./images/sin.jpg "rgb = 24 bit color") 
-![](./images/singray.jpg "gray = 8 bit color") 
+
 
 #### sin(x*y)
 ![](./images/l.jpg "k = sin(x*y); single pattern ,  24 bit color") 
@@ -54,6 +53,7 @@
 
 #### sin(x) + sin(y)
 ![](./images/sin.jpg "k =  sin(x) + sin(y), rgb = 24 bit color") 
+![](./images/singray.jpg "k =  sin(x) + sin(y), gray = 8 bit color") 
 ![](./images/sinbw1.jpg "k =  sin(x) + sin(y), black and white = 1 bit color") 
 ![](./images/Jacco179SinXSinY.jpg "k =  sin(x) + sin(y), indexed color ( palette)") 
 
