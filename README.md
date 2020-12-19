@@ -80,10 +80,14 @@
 ### himmelblau function
 ![](./images/himmelblau.png "himmelblau function") 
 
-### checkerboard
+### checkerboard and grid
 ![](./images/checker.png "checker")
- 
-
+![](./images/cartesian_grid.png "cartesian_grid")
+![](./images/polar_grid.png "polar_grid") 
+![](./images/polar_grid2.png "polar_grid2") 
+![](./images/polar_grid2_normal.png "polar_grid2 normal") 
+![](./images/polar_grid2_minus.png "polar_grid2 minus") 
+![](./images/polar_grid2_tan.png "polar_grid2 tan") 
 
 # Theory
 [Procedural textures are 2D or 3D plots of mathematical functions (called procedures)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-B2C969C0-48CD-45AB-8C7B-E6FC9E34AD19-htm.html) 
