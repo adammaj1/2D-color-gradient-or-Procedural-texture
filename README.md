@@ -54,6 +54,10 @@
 ![](./images/singray.jpg "gray = 8 bit color") 
 ![](./images/Jacco179SinXSinY.jpg " indexed color ( palette)") 
 
+
+![](./images/sinxyxy.png " sin(x) + sin(y) + sin(x+y) indexed color from palette") 
+
+
 ### whirl
 ![](./images/whirl.jpg "whirl in 24 bit color") 
 
