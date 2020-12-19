@@ -46,7 +46,7 @@ https://github.com/sol-prog/Perlin_Noise
 
 https://gitlab.com/drummyfish/ptdesigner/-/tree/master/
 
-
+https://commons.wikimedia.org/wiki/File:Worley.jpg
 
 https://commons.wikimedia.org/wiki/File:XOR_texture.png
 
@@ -128,8 +128,7 @@ int nMax; // =  sizeof(titles)/sizeof(titles[0]); // 18; // see GiveColor functi
 // add new title here and new function to GiveColor
 // titles = "Rainbow Linas Magma GrayL GrayNL2 GrayNL3 GraySqrt Green NewLinas CoolWarm GrayGamma GrayNL3Wave2 GrayNL3Wave10 GraySqrtWave ColorLWave ColorLWaveInverted NL3Wave5NonInv Cubehelix"
 const char *titles[] = {"max", "min", "product" , "maxabs", "minsqrt", "sqrtp", "powxy", "pow", "sin", "sinxy", 
-			"checker", "star8", "star8i", "cabs", "cabsi", "cargm", "cturn", "conic", "himmelblau", "sinxpy", 
-			"repeatingp", "sincosin", "sinx", "checkersin", "cartesian_grid", "polar_grid", "polar_grid2", "carg"
+			"checker", "star8", "star8i", "cabs", "cabsi", "cargm", "cturn", "conic", "himmelblau" 
 			};
 
 
@@ -218,59 +217,6 @@ double clamp(const double d){
 }
 
 
-
-// fractional part of real (double) number
-double frac(double d){
-
-	double fraction = d - ((long)d);
-	return fraction;
-}
-
-
-
-
-/* 
-
-output of carg is: 
--  argument also called phase angle) of complex number z, with a branch cut along the negative real axis.
-- in radians from -pi to pi
-
-modification tranlates range from [-pi, pi] to  [0 ,2*pi]
-
-*/
-double cargm(double complex z)
-{
-	double argument;
-  	argument = carg(z); //   argument in radians from -pi to pi
-  
-  	if (argument<0.0) 
-    		{argument = TwoPi + argument ; }//   argument in radians in [0 ,2*pi]
-    	argument /= TwoPi  ; //   argument in radians from 0 to 1
-    	argument *= 5.0; // repeating gradient
-     
-  	return argument ; // argument in radians from 0.0 to 2*Pi
-}
-
-
-
-
-
-
-double cturn(double complex z)
-{
-  double argument;
-  
-  argument = carg(z); //   argument in radians from -pi to pi
-  
-  if (argument<0.0) 
-    argument = TwoPi + argument ; //   argument in radians from 0 to 2*pi
-     
-  return (argument/TwoPi) ; // argument in turns from 0.0 to 1.0
-}
-
-
-
-
 /*
 
 https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/procedural-texturing
@@ -283,10 +229,8 @@ checkers, in mod form
 */
 double checker( double x, double y){
 
-	double m = 5.0; 
-	// map input from [-1,1]x[-1,1] to [-m,m]x[-m,m]
-	int ix = floor(m*x);
-	int iy = floor(m*y);
+	int ix = floor(5.0*x);
+	int iy = floor(5.0*y);
 
 
 	return abs(ix + iy) % 2;
@@ -294,115 +238,20 @@ double checker( double x, double y){
 
 }
 
-// give 
-double grid(const  double d, const double grid_width){
-
-	
-	double g = fabs(d);
-	g = frac(g);
-	if (g >  1.0-grid_width)
-		{g = 1.0- g;}
-		else { if (g > grid_width)
-				{g = 1.0;}}
-		
-	return g;	
-	
 
 
+double frac(double d){
+
+	double fraction = d - ((long)d);
+	return fraction;
 }
-
-
-
-double Give_cartesian_grid( double x, double y){
-
-	double grid_width = 0.05;
-	// mapped input from [-1,1]x[-1,1] to [-m,m]x[-m,m]
-	double m = 10.0; // 
-	double gx = grid(m*x, grid_width);
-	double gy = grid(m*y, grid_width);
-	double g = (gx + gy)/2.0; 
-
-
-	return g ;
-
-
-}
-
-
-double Give_polar_grid( double x, double y){
-
-	double grid_width = 0.05;
-	double m = 10.0; // 
-	complex double z = x+ y*I;
-	
-	double r = m*cabs(z);
-	// mapped input from [0,1] to [0,m]
-	double t = m*cturn(z);
-	
-	double gr = grid(r, grid_width);
-	
-	// The radial grid lines have noticeable changes in the width 
-	double gt = grid(t, grid_width);
-
-	double g = ( gr + gt)/2.0; 
-
-
-	return g ;
-
-
-}
-
-double Give_polar_grid2( double x, double y){
-
-	double grid_width = 0.05;
-	double m = 10.0; // 
-	complex double z = x+ y*I;
-	
-	double r = m*cabs(z);
-	// mapped input from [0,1] to [0,m]
-	double t = m*cturn(z);
-	
-	double gr = grid(r, grid_width);
-	
-	// The radial grid lines have noticeable changes in the width 
-	// arc length of the circle depends on r
-	// grid_width = grid_width - grid_width*tan(r/m)
-	double gt = grid(t, grid_width/r);
-
-	double g = ( gr + gt)/2.0; 
-
-
-	return g ;
-
-
-}
-
-
-
-// not works
-double checkersin( const double x, const double y){
-//domain runs from -p to p in the real part and 0 to 2*pi in the imaginary part. 
-
-	complex double z = M_PI*x+ M_PI*(1.0+y)*I;
-	z = sin(z);
-	
-	
-	int ix = floor(cabs(z));
-	int iy = floor(carg(z));
-
-
-	return abs(ix + iy) % 2;
-
-
-}
-
 
 
 
 /* 
  r is the smooth potential and phi is the final angle
  code by xenodreambuie : "I call this texture pyramids. My code in Pascal for the Star8 texture is "
- https://fractalforums.org/programming/11/how-many-different-ways-are-there-to-show-such-set/3874/msg25389#msg25389
+ 
  
 */ 
 
@@ -431,6 +280,35 @@ double GiveStar8(double r, double phi){
 }
 
 
+double cargm(double complex z)
+{
+	double argument;
+  	argument = carg(z); //   argument in radians from -pi to pi
+  
+  	if (argument<0.0) 
+    		{argument = TwoPi + argument ; }//   argument in radians from 0 to 2*pi
+    	argument /= TwoPi  ; //   argument in radians from 0 to 1
+    	argument *= 5.0; // repeating gradient
+     
+  	return argument ; // argument in radians from 0.0 to 2*Pi
+}
+
+
+
+
+
+
+double cturn(double complex z)
+{
+  double argument;
+  
+  argument = carg(z); //   argument in radians from -pi to pi
+  
+  if (argument<0.0) 
+    argument = TwoPi + argument ; //   argument in radians from 0 to 2*pi
+     
+  return (argument/TwoPi) ; // argument in turns from 0.0 to 1.0
+}
 
 
 
@@ -453,115 +331,15 @@ double conic(double complex z)
 
 // https://en.wikipedia.org/wiki/Himmelblau%27s_function
 double GiveHimmelblau(double x, double y){
-	// mapped input to [-m,m]x[-m,m]
-	double m = 6.0;
-	x *= m;
-	y *= m;
+	// mapped input to [-6,6]x[-6,6]
+	x *= 6.0;
+	y *= 6.0;
 	double a = x*x+y-11.0;
 	double b = x+y*y-7.0;
 	// mapped output to 
 	 return (a*a + b*b)/200.0;
 
 }
-
-
-
-
-/* 1d wave */
-double GiveLWaveInverted(const double position){
-	
-  int segments=4;
-  double d = fabs(segments*position);
-  /* if position > 1 then we have repetition of colors it maybe useful    */
-  if (d >1.0)
-    {	int p = (int)d;
-      d = d-p; // fractional part 
-      if (p % 2)
-	{d  = 1.0- d;} // reverse gradient
-    }
-   return d; // in [0.1] range
-
-}
-
-double GiveSine(const double position){
-	
-	// the commensts by P Kovesi
-	// my values are slightly changed to get similar vusual effect
-	double angle = position*2.0*M_PI; // input of the sin function is an angle in radians in range [0, 2*Pi]
-	//double f = iWidth/4.0; // frequency: The wavelength of the sine wave is set at 8 pixels 
-	double s = (1.0+ sin(angle))/2.0; // wave range from [-1,1] to [0,1]
-  	
-  	return fabs(s);
-  	
-	
-
-}
-
-
-double GiveCosine(const double position){
-	
-	// the commensts by P Kovesi
-	// my values are slightly changed to get similar vusual effect
-	double angle = position*2.0*M_PI; // input of the sin function is an angle in radians in range [0, 2*Pi]
-	//double f = iWidth/4.0; // frequency: The wavelength of the sine wave is set at 8 pixels 
-	double s = (1.0+cos(angle))/2.0; // wave range from [-1,1] to [0,1]
-  	
-  	return fabs(s);
-  	
-	
-
-}
-
-
-
-
-
-/*
-
-RepeatingP
-
-
-*/
-double GiveRepeatingP(double x, double y){
-	// mapped input to [-6,6]x[-6,6]
-	double a = 10.0*x;
-	double b = 60.0*y;
-	a = GiveLWaveInverted(a);
-	b =  GiveSine(b);
-	// mapped output to 
-	 return (a + b)/2.0;
-
-}
-
-
-
-
-
-double Give_sincosin(double x, double y){
-	// mapped input from [-1,1]x[-1,1] to [-m,m]x[-m,m]
-	double m = 4.0;
-	double a = m*x;
-	double b = m*y;
-	a = GiveSine(a);
-	b = GiveCosine(b);
-	// mapped output from [0,2] to [0,1] range
-	 return (a + b)/2.0;
-
-}
-
-
-
-double Give_sinx(const double x, const double y){
-	// mapped input to [-6,6]x[-6,6]
-	double a = x;
-	//double b = y;
-	a = GiveSine(a);
-	//b = 1.0-GiveCosine(b);
-	// mapped output to 
-	 return a;
-
-}
-
 
 
 
@@ -620,31 +398,13 @@ double GiveGray(const double x, const double y, const int n, double rgb[]){
   		
   		case 14 : {d =  clamp(1.0 - cabs(x+y*I)); break;} //  cabsi
   		
-  		case 15 : {d =  cargm(x+y*I); break;} //  cargm = modified carg
+  		case 15 : {d =  cargm(x+y*I); break;} //  cargm
   		
   		case 16 : {d =  cturn(x+y*I); break;} //  cturn
   		
   		case 17 : {d =  conic(x+y*I); break;} //  conic
   		
   		case 18 : {d =  GiveHimmelblau(x,y); break;} //  Himmelblau
-  		
-  		case 19 : {d =  (1.0 + sin(x+y* 2.0* M_PI ))/2.0; break;} // sinxpy
-  
-  		case 20 : {d = GiveRepeatingP(x, y); break;}
-  			
-  		case 21 : {d = Give_sincosin(x, y); break;}
-  		
-  		case 22 : {d = Give_sinx(x, y); break;}
-  		
-  		case 23 : {d = checkersin(x,y); break;}
-  		
-  		case 24 : {d = Give_cartesian_grid(x,y); break;}
-  		
-  		case 25 : {d = Give_polar_grid(x,y); break;}
-  		
-  		case 26 : {d = Give_polar_grid2(x,y); break;}
-  		
-  		case 27 : {d = carg(x+y*I); break;}  // carg ( not modified)
   
   
   		default:{}
@@ -711,9 +471,7 @@ int PlotPoint(unsigned char A[], int iX, int iY, int n){
 
 
 
-/* 
- each pixel is computed "independently"
-*/
+// --------------------
 int FillArray (unsigned char A[] , int n){
 
   int iX;

@@ -7,14 +7,14 @@
 # ./g.sh
 # checked in https://www.shellcheck.net/
 
-size=300
-
+ 
 # for all ppm files in this directory
+#!/bin/bash
 for file in *.ppm ; do
   # b is name of file without extension
   b=$(basename "$file" .ppm)
   # convert  using ImageMagic
-  convert "${b}".ppm -resize "$size"x"$size" "${b}".png
+  convert "${b}".ppm -resize 600x600 "${b}".png
   echo "$file"
 done
 
