@@ -30,30 +30,33 @@
 ## pascal images (up to 24 bit color)
 
 ![](./images/absz.jpg "abs") 
-![](./images/b.jpg "description") 
-![](./images/c.jpg "description") 
-![](./images/d.jpg "description") 
-![](./images/e.jpg "description") 
+![](./images/b.jpg "b") 
+![](./images/c.jpg "j") 
+![](./images/d.jpg "d") 
+![](./images/e.jpg "e") 
 
 
-![](./images/f.jpg "description") 
-![](./images/g.jpg "description") 
-![](./images/h.jpg "description") 
+
+![](./images/g.jpg "g") 
+![](./images/h.jpg "h") 
 ![](./images/hsv.jpg "hsv") 
-![](./images/l.jpg "description") 
+![](./images/l.jpg "l") 
 
 
 ![](./images/maxreim.jpg "maxreim") 
+
+
+### sin 
+
 ![](./images/sin.jpg "sin") 
 ![](./images/sinbw.jpg "sinbw") 
 ![](./images/sinbw1.jpg "sinbw1") 
 ![](./images/singray.jpg "singray") 
+![](./images/Jacco179SinXSinY.jpg "description") 
 
-
-
+### whirl
 ![](./images/whirl.jpg "description") 
 
-![](./images/Jacco179SinXSinY.jpg "description") 
 
 
 
@@ -82,6 +85,20 @@ Parts
 * 1 bit color mode: Black and White ( b&w )
 * direct color, palette mode
 
+```pas
+ case ColorType of
+                    TrueColor: if FunctionType=HSV   // 24 bit color
+                    	then kolor:=k 
+                    	else kolor:=Rainbow(kMin,kMAx,k mod kmax);
+                    Direct:    kolor:=k;
+                    GrayScale: kolor:=GrayScaleF(Round((k*256) div kmax)); // 8 bit color
+                    Pseudo8bit:kolor:=GivePseudo8bitColor(k mod 255);
+                    BlackAndWhite: if odd(k) then kolor:=clBlack // 1 bit color
+                                         else kolor:=clWhite;
+                  end; // case  ColorType }
+```
+
+
 
 
 
@@ -97,6 +114,10 @@ Function
 # Color functions
 ## pascal
 For color functions in pascal ( Delphi) see file: [ColorM.pas](./src/pas/ColorM.pas)
+
+Here input is a pair of integers (x,y): 
+* x in [0, bitmapa.width-1]
+* y in [0, bitmapa.height-1]
 
 
 ```pascal
@@ -126,18 +147,8 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
             // (sin+1)/2    [0,1]
             SinusXY:    result:=y+round(height*(sin(Pi*DegToRad(x + y))+1)/8);
             SinusXmY:   result:=y+round(height*(sin(Pi*DegToRad(x*y))+1)/8);
-            SinXSinY:   result:=round(
-                              (height
-                              *
-                              (2+sin(Pi*DegToRad(y)) + sin(Pi*DegToRad(x))))
-                              /4
-                              );//try to change numerical values
-            sinXYXY:     result:=round
-                              (
-                                height
-                                *
-                                (2+sin(Pi*DegToRad(y)) + sin(Pi*DegToRad(x))+sin(Pi*DegToRad(x+y)))/8
-                                );
+            SinXSinY:   result:=round((height * (2+sin(Pi*DegToRad(y)) + sin(Pi*DegToRad(x)))) /4);//try to change numerical values
+            sinXYXY:     result:=round ( height * (2+sin(Pi*DegToRad(y)) + sin(Pi*DegToRad(x))+sin(Pi*DegToRad(x+y)))/8 );
             XorY:         result:=x or  y;
             XxorY:        result:=x xor y;
             XshlY:        result:=x shl y;
@@ -152,6 +163,10 @@ Function Projection(center:TPoint;height:integer;x,y:integer;FunctionType:TFunct
 
 ```
 ## c
+Here input is a pair of doubles z = (x,y) 
+* x in [-1,1]
+* y in [-1,1] 
+
 
 ```c
 double conic(double complex z)
