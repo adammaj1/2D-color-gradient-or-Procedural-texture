@@ -81,10 +81,12 @@
 ![](./images/himmelblau.png "himmelblau function") 
 
 ### checkerboard and grid
+
+#### cartesian
 ![](./images/checker.png "checker")
 ![](./images/cartesian_grid.png "cartesian_grid")
 
-
+#### polar
 ![](./images/polar_grid2.png "polar_grid2") 
 ![](./images/polar_grid2_normal.png "polar_grid2 normal") 
 
