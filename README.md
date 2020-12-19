@@ -59,7 +59,7 @@
 ## gray = 8 bit color ( c images ) 
 
 ### cabs(z)
-![](./images/conic.png "conic") 
+
 ![](./images/cabs.png "cabs") 
 ![](./images/cabsi.png "cabs inverted") 
 
@@ -67,6 +67,7 @@
 ![](./images/carg.png "carg") 
 ![](./images/cargm.png "carg modified") 
 ![](./images/cturn.png "cturn") 
+![](./images/conic.png "conic") 
 
 ### max min
 
@@ -92,6 +93,9 @@
 
 ![](./images/polar_grid2_minus.png "polar_grid2 minus") 
 ![](./images/polar_grid2_tan.png "polar_grid2 tan") 
+
+Compare with:
+* [grid for binary decomposition](https://gitlab.com/adammajewski/my-book#129-generating-a-grid)
 
 # Theory
 [Procedural textures are 2D or 3D plots of mathematical functions (called procedures)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-B2C969C0-48CD-45AB-8C7B-E6FC9E34AD19-htm.html) 
