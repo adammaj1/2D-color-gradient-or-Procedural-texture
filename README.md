@@ -83,9 +83,11 @@
 ### checkerboard and grid
 ![](./images/checker.png "checker")
 ![](./images/cartesian_grid.png "cartesian_grid")
-![](./images/polar_grid.png "polar_grid") 
+
+
 ![](./images/polar_grid2.png "polar_grid2") 
 ![](./images/polar_grid2_normal.png "polar_grid2 normal") 
+
 ![](./images/polar_grid2_minus.png "polar_grid2 minus") 
 ![](./images/polar_grid2_tan.png "polar_grid2 tan") 
 
