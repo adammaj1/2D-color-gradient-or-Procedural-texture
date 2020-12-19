@@ -48,14 +48,14 @@
 
 ### sin 
 
-![](./images/sin.jpg "sin") 
-![](./images/sinbw.jpg "sinbw") 
-![](./images/sinbw1.jpg "sinbw1") 
-![](./images/singray.jpg "singray") 
-![](./images/Jacco179SinXSinY.jpg "description") 
+![](./images/sin.jpg "rgb = 24 bit color") 
+![](./images/sinbw.jpg "black and white = 1 bit color ") 
+![](./images/sinbw1.jpg "black and white = 1 bit color") 
+![](./images/singray.jpg "gray = 8 bit color") 
+![](./images/Jacco179SinXSinY.jpg " indexed color ( palette)") 
 
 ### whirl
-![](./images/whirl.jpg "description") 
+![](./images/whirl.jpg "whirl in 24 bit color") 
 
 
 
