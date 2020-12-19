@@ -50,18 +50,19 @@
 
 ![](./images/sin.jpg "rgb = 24 bit color") 
 ![](./images/singray.jpg "gray = 8 bit color") 
+![](./images/sinxmy.png "k = sin(x*y); repeating pattern, 24 bit color") 
+
+#### sin(x) + sin(y)
+
+![](./images/sinbw1.jpg "k =  sin(x) + sin(y), black and white = 1 bit color") 
+![](./images/l.jpg "k = sin(x*y); single pattern ,  24 bit color") 
+![](./images/Jacco179SinXSinY.jpg "k =  sin(x) + sin(y), indexed color ( palette)") 
 
 
-![](./images/sinbw.jpg "black and white = 1 bit color ") 
-![](./images/sinbw1.jpg "black and white = 1 bit color") 
+#### sin(x) + sin(y) + sin(x+y)
 
-
-![](./images/l.jpg "d = sin(x*y); single pattern ,  24 bit color") 
-![](./images/sinxmy.png "d = sin(x*y); repeating pattern, 24 bit color") 
-
-![](./images/Jacco179SinXSinY.jpg "d =  sin(x) + sin(y), indexed color ( palette)") 
-![](./images/sinxyxy.png "d = sin(x) + sin(y) + sin(x+y),  indexed color from palette") 
-
+![](./images/sinxyxy.png "k = sin(x) + sin(y) + sin(x+y),  indexed color from palette") 
+![](./images/sinbw.jpg "k = sin(x) + sin(y) + sin(x+y), black and white = 1 bit color ") 
 
 ### whirl
 ![](./images/whirl.jpg "whirl in 24 bit color") 
