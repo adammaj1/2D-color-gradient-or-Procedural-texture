@@ -34,17 +34,14 @@
 ![](./images/c.jpg "j") 
 ![](./images/d.jpg "d") 
 ![](./images/e.jpg "e") 
-
-
-
 ![](./images/g.jpg "g") 
 ![](./images/h.jpg "h") 
 ![](./images/hsv.jpg "hsv") 
-
-
-
 ![](./images/maxreim.jpg "maxreim") 
 
+### xor
+
+![](./images/xxory.png "k = x xor y, 24 bit color") 
 
 ### sin 
 
@@ -56,7 +53,7 @@
 ![](./images/sinxmy.png "k = sin(x*y); repeating pattern, 24 bit color") 
 
 #### sin(x) + sin(y)
-
+![](./images/sin.jpg "k =  sin(x) + sin(y), rgb = 24 bit color") 
 ![](./images/sinbw1.jpg "k =  sin(x) + sin(y), black and white = 1 bit color") 
 ![](./images/Jacco179SinXSinY.jpg "k =  sin(x) + sin(y), indexed color ( palette)") 
 
