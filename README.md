@@ -40,7 +40,7 @@
 ![](./images/g.jpg "g") 
 ![](./images/h.jpg "h") 
 ![](./images/hsv.jpg "hsv") 
-![](./images/l.jpg "l") 
+
 
 
 ![](./images/maxreim.jpg "maxreim") 
@@ -49,13 +49,18 @@
 ### sin 
 
 ![](./images/sin.jpg "rgb = 24 bit color") 
+![](./images/singray.jpg "gray = 8 bit color") 
+
+
 ![](./images/sinbw.jpg "black and white = 1 bit color ") 
 ![](./images/sinbw1.jpg "black and white = 1 bit color") 
-![](./images/singray.jpg "gray = 8 bit color") 
-![](./images/Jacco179SinXSinY.jpg " indexed color ( palette)") 
 
 
-![](./images/sinxyxy.png " sin(x) + sin(y) + sin(x+y) indexed color from palette") 
+![](./images/l.jpg "d = sin(x*y); single pattern ,  24 bit color") 
+![](./images/sinxmy.png "d = sin(x*y); repeating pattern, 24 bit color") 
+
+![](./images/Jacco179SinXSinY.jpg "d =  sin(x) + sin(y), indexed color ( palette)") 
+![](./images/sinxyxy.png "d = sin(x) + sin(y) + sin(x+y),  indexed color from palette") 
 
 
 ### whirl
