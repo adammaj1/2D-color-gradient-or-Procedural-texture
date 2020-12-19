@@ -21,7 +21,7 @@
 ![](./images/cargm.png "carg modified") 
 ![](./images/cturn.png "cturn") 
 
-###
+### max min
 
 ![](./images/max.png "max") 
 ![](./images/min.png "min") 
@@ -43,11 +43,14 @@
 ![](./images/absz.jpg "abs") 
 ![](./images/b.jpg "b") 
 ![](./images/c.jpg "j") 
-![](./images/d.jpg "d") 
+
 ![](./images/e.jpg "e") 
 ![](./images/g.jpg "g") 
 ![](./images/h.jpg "h") 
 ![](./images/hsv.jpg "hsv") 
+
+### max(x,y)
+![](./images/d.jpg "d") 
 ![](./images/maxreim.jpg "maxreim") 
 
 ### xor
