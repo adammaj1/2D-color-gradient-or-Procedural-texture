@@ -46,7 +46,7 @@
 
 ![](./images/e.jpg "e") 
 ![](./images/g.jpg "g") 
-![](./images/h.jpg "h") 
+
 ![](./images/hsv.jpg "hsv") 
 
 ### max(x,y)
@@ -59,6 +59,8 @@
 
 ### sin 
 
+### sin(x)
+![](./images/h.jpg "sin(x),  24 bit color ") 
 
 
 #### sin(x*y)
