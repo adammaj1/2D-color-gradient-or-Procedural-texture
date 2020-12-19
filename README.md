@@ -299,8 +299,14 @@ On linux ( tested on Ubuntu 20.04):
 ```
 wine ./Rainbow.exe
 wine ./exe/Rainbow.exe
-
 ```
+
+
+Use: 
+* open main menu, choose options item
+* choose color mode
+* use arrow up and down keys to change functions
+* check the options in the status bar
 
 
 
