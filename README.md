@@ -9,34 +9,6 @@
 
 # images
 
-## gray = 8 bit color ( c images ) 
-
-### cabs(z)
-![](./images/conic.png "conic") 
-![](./images/cabs.png "cabs") 
-![](./images/cabsi.png "cabs inverted") 
-
-### carg(z)
-![](./images/carg.png "carg") 
-![](./images/cargm.png "carg modified") 
-![](./images/cturn.png "cturn") 
-
-### max min
-
-![](./images/max.png "max") 
-![](./images/min.png "min") 
-
-### star 8
-![](./images/star8.png "star8") 
-![](./images/star8i.png "star8 inverted") 
-
-### himmelblau function
-![](./images/himmelblau.png "himmelblau function") 
-
-### checkerboard
-![](./images/checker.png "checker")
- 
-
 
 ## pascal images (up to 24 bit color)
 
@@ -83,6 +55,34 @@
 ![](./images/whirl.jpg "whirl in 24 bit color") 
 
 
+
+## gray = 8 bit color ( c images ) 
+
+### cabs(z)
+![](./images/conic.png "conic") 
+![](./images/cabs.png "cabs") 
+![](./images/cabsi.png "cabs inverted") 
+
+### carg(z)
+![](./images/carg.png "carg") 
+![](./images/cargm.png "carg modified") 
+![](./images/cturn.png "cturn") 
+
+### max min
+
+![](./images/max.png "max") 
+![](./images/min.png "min") 
+
+### star 8
+![](./images/star8.png "star8") 
+![](./images/star8i.png "star8 inverted") 
+
+### himmelblau function
+![](./images/himmelblau.png "himmelblau function") 
+
+### checkerboard
+![](./images/checker.png "checker")
+ 
 
 
 # Theory
