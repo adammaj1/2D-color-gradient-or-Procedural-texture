@@ -302,6 +302,10 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 
 # See also
 ## functions
+* [Texture Analysis and Synthesis ](https://graphics.stanford.edu/projects/texture/)
+* [Representation and Synthesis of Visual Texture by Javier Portilla and Eero P. Simoncelli](http://www.cns.nyu.edu/~lcv/texture/index.php)
+  * [LabForComputationalVision: textureSynth](https://github.com/LabForComputationalVision/textureSynth)
+* [Shader Coding: Space GIF step-by-step by The Art of Code](https://www.youtube.com/watch?v=cQXAbndD5CQ)
 * [island-gradient by Code 2D](https://code2d.wordpress.com/2020/07/21/island-gradient/)
 * [2D distance functions by inigo quilez ](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)
 * [a-simple-procedural-texture-algorithm by by Herman Tulleken ](http://www.code-spot.co.za/2008/11/07/a-simple-procedural-texture-algorithm/)
@@ -314,7 +318,7 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 * [what-is-procedural-workflow](https://www.imanvfx.com/what-is-procedural-workflow/)
 * [2D textures in Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952-htm.html#GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952)
 * [A-generic-lattice-noise-algorithm-an-evolution-of](https://www.codeproject.com/Articles/785084/A-generic-lattice-noise-algorithm-an-evolution-of)
-
+* [Chladni plate interference surfaces Written by Paul Bourke April 2001](http://paulbourke.net/geometry/chladni/)
 
 ## 2D noise
 * [Pocedural_Noise(2f)](http://physbam.stanford.edu/cs448x/old/Procedural_Noise(2f)Perlin_Noise.html)
@@ -342,6 +346,7 @@ Use:
 * open main menu, choose options item
 * choose color mode
 * use arrow up and down keys to change functions
+* use shift+arrow to change color type 
 * check the options in the status bar
 
 
