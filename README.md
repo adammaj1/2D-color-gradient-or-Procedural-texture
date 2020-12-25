@@ -318,8 +318,17 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 * [what-is-procedural-workflow](https://www.imanvfx.com/what-is-procedural-workflow/)
 * [2D textures in Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952-htm.html#GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952)
 * [A-generic-lattice-noise-algorithm-an-evolution-of](https://www.codeproject.com/Articles/785084/A-generic-lattice-noise-algorithm-an-evolution-of)
-* [Chladni plate interference surfaces Written by Paul Bourke April 2001](http://paulbourke.net/geometry/chladni/)
 
+## Chladni patterns
+* [Chladni plate interference surfaces Written by Paul Bourke April 2001](http://paulbourke.net/geometry/chladni/)
+* [Enrique Zeleny - "Chladni Figures" Wolfram Demonstrations Project Published: December 6 2008](https://demonstrations.wolfram.com/ChladniFigures/)
+* [Albert Callejo 2009](http://electricavisuals.com/www.dima-vj.com/chladni/)
+* [vasyan on FF](https://fractalforums.org/fractal-mathematics-and-new-theories/28/experiments-with-chladni-patterns/2889)
+  * [gallery](https://fractalforums.org/index.php?action=gallery;su=user;cat=88;u=732)
+*  Evgeny Demidov
+  * [chladni](https://www.ibiblio.org/e-notes/html5/wave5.html)
+  * [waves](https://www.ibiblio.org/e-notes/webgl/waves/linear.htm)
+* [Tonoscope](https://www.youtube.com/watch?v=PkOAnfXlA5M)
 ## 2D noise
 * [Pocedural_Noise(2f)](http://physbam.stanford.edu/cs448x/old/Procedural_Noise(2f)Perlin_Noise.html)
 * [FastNoise by Auburn](https://github.com/Auburn/FastNoise/)
