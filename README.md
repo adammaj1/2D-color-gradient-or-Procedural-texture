@@ -325,10 +325,15 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 * [Albert Callejo 2009](http://electricavisuals.com/www.dima-vj.com/chladni/)
 * [vasyan on FF](https://fractalforums.org/fractal-mathematics-and-new-theories/28/experiments-with-chladni-patterns/2889)
   * [gallery](https://fractalforums.org/index.php?action=gallery;su=user;cat=88;u=732)
-*  Evgeny Demidov
+* Evgeny Demidov
   * [chladni](https://www.ibiblio.org/e-notes/html5/wave5.html)
   * [waves](https://www.ibiblio.org/e-notes/webgl/waves/linear.htm)
 * [Tonoscope](https://www.youtube.com/watch?v=PkOAnfXlA5M)
+* [shadertoy](https://www.shadertoy.com/results?query=tag%3Dchladni)
+* [dmackinnon](https://github.com/dmackinnon1/chladni)
+  * [r_examples](https://github.com/dmackinnon1/r_examples/tree/master/chladni) and [blog](http://www.mathrecreation.com/2016/06/more-chlandi-figures-in-r.html)
+* [inéquation à 2 inconnues by Patrick Clément](https://www.geogebra.org/m/Wmxps3zA#material/yHxqaUcb)
+
 ## 2D noise
 * [Pocedural_Noise(2f)](http://physbam.stanford.edu/cs448x/old/Procedural_Noise(2f)Perlin_Noise.html)
 * [FastNoise by Auburn](https://github.com/Auburn/FastNoise/)
