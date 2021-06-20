@@ -15,10 +15,8 @@
 ![](./images/absz.jpg "abs") 
 ![](./images/b.jpg "b") 
 ![](./images/c.jpg "j") 
-
 ![](./images/e.jpg "e") 
 ![](./images/g.jpg "g") 
-
 ![](./images/hsv.jpg "hsv") 
 
 ### max(x,y)
@@ -302,6 +300,9 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 
 # See also
 ## functions
+* [heman](https://github.com/prideout/heman) -  a tiny MIT-licensed C library of image utilities for dealing with height maps, normal maps, distance fields,
+* [Mixture](https://github.com/alelievr/Mixture) - s a powerful node-based tool crafted in unity to generate all kinds of textures in realtime
+* [TextureSynthesis](https://github.com/mxgmn/TextureSynthesis) - 
 * [Texture Analysis and Synthesis ](https://graphics.stanford.edu/projects/texture/)
 * [Representation and Synthesis of Visual Texture by Javier Portilla and Eero P. Simoncelli](http://www.cns.nyu.edu/~lcv/texture/index.php)
   * [LabForComputationalVision: textureSynth](https://github.com/LabForComputationalVision/textureSynth)
@@ -403,6 +404,13 @@ git push -u origin main
 ```               
 
 
+local repo
+
+```bash
+~/Pobrane/r20051021 
+```
+
+
 
 ## Subdirectory
 
@@ -423,6 +431,23 @@ then link the images:
 ```git
 gitm mv -f 
 ```
+
+## warning 
+
+## distribute binary 
+
+```
+The page build completed successfully, but returned the following warning for the `main` branch:
+
+It looks like you're using GitHub Pages to distribute binary files. We strongly suggest that you use releases to ship projects on GitHub. Releases are GitHub's way of packaging and providing software to your users. You can think of it as a replacement to using downloads to provide software. We found the following file(s) which may be a good candidate for releases: 
+```
+
+The only way to prevent these warnings from being sent is to either:
+* Remove the executables from your repository
+* Store them on a different branch from your Pages publishing source
+* Store them outside of the docs directory, if you’re using this directory to host your site
+
+
 
 ## markdown
 * [mastering-markdown](https://guides.github.com/features/mastering-markdown/)
