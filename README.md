@@ -343,7 +343,8 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 ## transformations 
 * [imitate-a-textured-sphere-in-2d](https://gamedev.stackexchange.com/questions/147193/imitate-a-textured-sphere-in-2d)
 
-
+## Midpoint Displacement fractal
+* [Midpoint Displacement Fractals by Faber](https://nexus316.wordpress.com/fractals/plasma/) and [aplet](https://sites.google.com/view/fabers-domain/home/math-is-beautiful/midpoint-displacement-fractal-generator)
 
 
 # run
