@@ -319,6 +319,7 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 * [what-is-procedural-workflow](https://www.imanvfx.com/what-is-procedural-workflow/)
 * [2D textures in Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952-htm.html#GUID-EA9BC7E0-22B4-46C1-8D5B-3A4C8B680952)
 * [A-generic-lattice-noise-algorithm-an-evolution-of](https://www.codeproject.com/Articles/785084/A-generic-lattice-noise-algorithm-an-evolution-of)
+* [RippleWeave ](https://x-ing.space/rippleweave/) - A function grapher by Xing and ( Ripple Weave Collection Nested trigonometric functions mapped onto HSL space. RippleWeave, 2021.) 
 
 ## Chladni patterns
 * [Chladni plate interference surfaces Written by Paul Bourke April 2001](http://paulbourke.net/geometry/chladni/)
