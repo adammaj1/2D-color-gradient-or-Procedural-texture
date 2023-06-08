@@ -300,6 +300,7 @@ The checkerboard pattern is regular grid of equal-sized colored squares
 
 # See also
 ## functions
+* [https://en.wikipedia.org/wiki/Test_functions_for_optimization Test functions for optimization in wikipedia]
 * [heman](https://github.com/prideout/heman) -  a tiny MIT-licensed C library of image utilities for dealing with height maps, normal maps, distance fields,
 * [Mixture](https://github.com/alelievr/Mixture) - s a powerful node-based tool crafted in unity to generate all kinds of textures in realtime
 * [TextureSynthesis](https://github.com/mxgmn/TextureSynthesis) - 
