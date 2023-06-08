@@ -402,7 +402,8 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/adammaj1/Procedural-texture.git
+# git remote add origin https://github.com/adammaj1/Procedural-texture.git
+git remote set-url origin git@github.com:adammaj1/2D-color-gradient-or-Procedural-texture.git
 git push -u origin main
 ```               
 
